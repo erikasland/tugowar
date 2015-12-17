@@ -3,6 +3,6 @@
     border: 0;
 }
 
-h1{
-    color: red;
+input{
+    display: block
 }

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+#wrapper{
+    width: 36em;
+    margin: 0 auto;
+}
+
+#start-wrap{
+    width: 5.2em;
+    margin: 0 auto;
+}
+
+#enter-players{
+    width: 11em;
+    margin: 0 auto;
+}
+
+input{
+    display: block;
+    border: solid lightgrey 1px;
+}
+
+#score-wrap{
+    margin: 0 0 15em 0;
+}
+
+.player-score{
+    display: inline-block;
+}
+
+#player-2-score{
+    margin: 0 0 0 18em;
+}
+
+img{
+    display: block;
+}
+
+.center-pointer{
+    margin: 0 auto;
+}
