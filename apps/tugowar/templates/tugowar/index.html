@@ -10,25 +10,29 @@
     <body>
         <div id='wrapper'>
             <div id='score-wrap'>
-                <h3 class='player-score'>Player 1 Score</h3>
-                <h3 class='player-score' id='player-2-score'>Player 2 Score</h3>
+                <h3 id='one_score'></h3>
+                <h3 id='player2score'>Player 2 Score</h3>
             </div>
             <div id='start-wrap'>
                 <button id='start-game'>Start Game</button>
             </div>
             <div id='enter-players'>
                 <h3>Enter your names!</h3>
-                <form>
+                <form id='player_form' action='addplayers' method='post'>
+                    {% csrf_token %}
                     {{player1}}
                     {{player2}}
+                    <input id='start-tug' type='submit' value='Tug'>
                 </form>
-                <button id='start-tug'>Tug It Hard!</button>
             </div>
             <div id='img-wrap'>
                 <img class='center-pointer' src='{% static "tugowar/img/down.jpg" %}'>
-                <img src='{% static "tugowar/img/tugowar.jpg" %}'>
+                <img id='main-img' src='{% static "tugowar/img/tugowar.jpg" %}'>
                 <img class='center-pointer' src='{% static "tugowar/img/up.jpg" %}'>
             </div>
+            <div id='onewon'></div>
+            <div id='twowon'></div>
+            <h1>{{player_one}}</h1>
         </div>
     </body>
 </html>
